@@ -167,9 +167,17 @@
     text-transform: uppercase;
     letter-spacing: 0.14em;
   }
+  .hero-summary { max-width: 76ch; margin-top: 20px; color: var(--muted); font-size: 16px; line-height: 1.65; }
+  .hero-proof { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 920px; margin-top: 28px; padding: 20px 0; border-block: 1px solid var(--border); }
+  .hero-proof li { font-size: 14px; line-height: 1.5; }
+  .hero-proof strong { display: block; font-size: 28px; color: var(--accent); }
+  .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 24px; font-size: 14px; }
+  .hero-button { padding: 12px 18px; border: 1px solid var(--accent); border-radius: 6px; }
+  .hero-actions a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  @media (max-width: 540px) { .hero-proof { grid-template-columns: 1fr; gap: 16px; } }
   .hero-chat {
     width: min(920px, 100%);
-    margin-top: 56px;
+    margin-top: 32px;
     padding: 24px;
     border: 1px solid var(--border);
     border-radius: 18px;
@@ -998,23 +1006,32 @@
 <header class="hero container" id="home">
   <div class="hero-content">
     <h1>
-      Hi, I'm <span class="name">Rishika Gour</span>
+      <span class="name">Rishika Gour</span>
     </h1>
-    <p class="tagline">
-      I turn <em>AI prototypes</em> into production-ready systems.
-    </p>
-    <p class="hero-role">AI Engineer · GenAI Systems · ML Engineering</p>
+    <p class="hero-role">Senior Solutions Engineer | Fintech APIs, Payments &amp; Integrations</p>
+    <p class="tagline">I turn customer requirements into practical API and integration solutions.</p>
+    <p class="hero-summary">7+ years across backend engineering, payment and transaction workflows, and customer-facing technical delivery. I lead technical discovery, deliver tailored demonstrations, and help teams troubleshoot integrations using Python, SQL, REST APIs, and webhooks.</p>
+    <ul class="hero-proof">
+      <li><strong>20</strong> client accounts supported</li>
+      <li><strong>30+</strong> tailored technical demonstrations</li>
+      <li><strong>20+</strong> REST endpoints built</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="hero-button" href="#experience">View Experience</a>
+      <a class="hero-button" href="Rishika_Gour_Resume.pdf" download>Download Resume</a>
+      <a href="#contact">Contact Me</a>
+    </div>
 
     <div class="hero-chat" aria-label="Portfolio assistant preview">
-      <div class="chat-question" id="chatQuestion">What do you build?</div>
+      <div class="chat-question" id="chatQuestion">What experience do you bring?</div>
       <div class="chat-answer" id="chatAnswer">
-        I build AI systems that move from prototype to production: multi-agent workflows, RAG applications, forecasting models, evaluation pipelines, and reliable data products.
+        I bring 7+ years across backend systems, payment and transaction workflows, customer-facing technical delivery, and analytics. At MediaSphere, I supported 20 client accounts and delivered 30+ tailored technical demonstrations.
       </div>
       <div class="chat-prompts">
-        <button class="chat-prompt active" type="button" data-question="What do you build?" data-answer="I build AI systems that move from prototype to production: multi-agent workflows, RAG applications, forecasting models, evaluation pipelines, and reliable data products.">What I build</button>
-        <button class="chat-prompt" type="button" data-question="What is your AI engineering focus?" data-answer="I focus on LLM application architecture, retrieval pipelines, agent orchestration, model evaluation, API integration, and deployment-ready engineering patterns.">AI focus</button>
-        <button class="chat-prompt" type="button" data-question="Show me your strongest work." data-answer="Start with my multi-agent SQL intelligence app, AI/ML forecasting system, SupportSense AI RAG project, and deep learning projects. They show the range from LLM workflows to retrieval, forecasting, and applied ML systems.">Projects</button>
-        <button class="chat-prompt" type="button" data-question="How can we connect?" data-answer="You can reach me through the inquiry form below, email me directly, or connect with me on LinkedIn. I am open to AI engineering, machine learning, and GenAI application roles.">Contact</button>
+        <button class="chat-prompt active" type="button" data-question="What experience do you bring?" data-answer="I bring 7+ years across backend systems, payment and transaction workflows, customer-facing technical delivery, and analytics. At MediaSphere, I supported 20 client accounts and delivered 30+ tailored technical demonstrations.">Experience</button>
+        <button class="chat-prompt" type="button" data-question="What is your payments and API experience?" data-answer="At Webaashi Technologies, I built backend services and more than 20 REST endpoints supporting order, inventory, payment, vendor, and delivery workflows. My work included authentication, validation, retries, idempotency, logging, and reconciliation.">Payments &amp; APIs</button>
+        <button class="chat-prompt" type="button" data-question="What technical skills do you use?" data-answer="Python, SQL, JavaScript, TypeScript, FastAPI, PostgreSQL, Redis, and React, alongside REST APIs, JSON, webhooks, authentication, data mapping, and request validation.">Technical Skills</button>
+        <button class="chat-prompt" type="button" data-question="How can we connect?" data-answer="Email me at rishika.rgour@gmail.com, connect with me on LinkedIn, or use the inquiry form below to discuss Senior Solutions Engineer opportunities.">Contact</button>
       </div>
     </div>
   </div>
