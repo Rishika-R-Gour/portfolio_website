@@ -745,7 +745,7 @@
   /* ===== SKILLS ===== */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
   }
   .skill-group {
@@ -1129,32 +1129,75 @@
 
   <div class="experience-group">
     <h3 class="experience-heading">Experience</h3>
-
     <div class="exp-item">
       <div class="exp-content">
-        <h3>AI Engineer - Capstone</h3>
-        <div class="company">FactoryTwin · Jan 2026 – May 2026 · 5 mos</div>
+        <h3>AI Engineer – Industry Capstone</h3>
+        <div class="company">FactoryTwin · Jan 2026 – May 2026</div>
+        <ul>
+          <li>Translated manufacturing operations needs into a scoped research prototype for an LLM-enabled operations assistant.</li>
+          <li>Mapped 13 operational actions to define supported workflows, required information, and system boundaries.</li>
+          <li>Built the prototype using Python, FastAPI, PostgreSQL, LangGraph, LangChain, and a React/TypeScript interface.</li>
+          <li>Structured request handling and tool routing to connect user requests with relevant operational actions.</li>
+          <li>Added input validation, retries, and fallbacks to handle uncertain or unsuccessful workflow steps.</li>
+          <li>Included human-review checkpoints for cases where the system should not proceed without oversight.</li>
+          <li>Created more than 50 evaluation and regression scenarios covering representative requests and failure cases.</li>
+          <li>Achieved 26/26 correct selections on a scoped workflow-routing benchmark.</li>
+          <li>Used LangSmith traces to inspect behavior, investigate failures, and guide iteration.</li>
+          <li>Documented prototype scope, evaluation methods, results, assumptions, and limitations.</li>
+          <li>Kept the work scoped as a research prototype; it was not a production deployment.</li>
+        </ul>
       </div>
     </div>
-
     <div class="exp-item">
       <div class="exp-content">
-        <h3>AI/ML Research Engineer</h3>
-        <div class="company">University of Connecticut · Sep 2024 – Mar 2026 · 1 yr 7 mos</div>
+        <h3>AI/ML Research Engineer / Graduate Analytics Assistant</h3>
+        <div class="company">University of Connecticut, OPIM · Sep 2024 – Mar 2026</div>
+        <ul>
+          <li>Built Python and SQL analyses for forecasting approaches across eight ISO-NE regions.</li>
+          <li>Prepared and validated input data for model development and quantitative comparisons.</li>
+          <li>Developed and evaluated models using PyTorch, TensorFlow, and scikit-learn.</li>
+          <li>Compared model performance with a persistence baseline; a Massachusetts experiment achieved approximately 67% lower MAE.</li>
+          <li>Examined error patterns and communicated findings, methods, assumptions, and limitations to research stakeholders.</li>
+          <li>Documented experiments and results to support reproducibility and follow-up analysis.</li>
+        </ul>
       </div>
     </div>
-
     <div class="exp-item">
       <div class="exp-content">
-        <h3>Data & ML Solutions Engineer</h3>
-        <div class="company">MediaSphere · Full-time · Jul 2022 – Jun 2024 · 2 yrs</div>
+        <h3>Solutions Engineer</h3>
+        <div class="company">MediaSphere · Jun 2022 – Aug 2024</div>
+        <ul>
+          <li>Supported 20 client accounts across five verticals, serving as a technical partner during discovery and implementation discussions.</li>
+          <li>Led customer conversations to clarify business goals, current workflows, source systems, and integration needs.</li>
+          <li>Mapped CRM, advertising, web analytics, and transaction data to clarify relationships and reporting requirements.</li>
+          <li>Translated customer use cases into data mappings, integration requirements, and validation steps.</li>
+          <li>Used Python, SQL, JavaScript, REST APIs, webhooks, and JSON troubleshooting to investigate data and integration issues.</li>
+          <li>Delivered 30+ tailored technical demonstrations and discussions for customer and internal stakeholders.</li>
+          <li>Explained API behavior, data flows, and implementation trade-offs to technical and nontechnical audiences.</li>
+          <li>Automated recurring reporting and preparation workflows, reducing manual effort by approximately 40% (about 12 hours per week).</li>
+          <li>Coordinated with client and internal teams to resolve technical questions and support implementation work.</li>
+          <li>Shared recurring customer requirements and product feedback with internal teams.</li>
+          <li>Created reusable implementation guides and templates for recurring delivery workflows.</li>
+          <li>Mentored three junior colleagues on discovery, troubleshooting, documentation, and customer communication.</li>
+        </ul>
       </div>
     </div>
-
     <div class="exp-item">
       <div class="exp-content">
-        <h3>Software Engineer</h3>
-        <div class="company">Webaashi Technologies · Full-time · Oct 2018 – May 2022 · 3 yrs 8 mos</div>
+        <h3>Backend &amp; Integrations Engineer</h3>
+        <div class="company">Webaashi Technologies · Oct 2018 – May 2022</div>
+        <ul>
+          <li>Worked as one of three backend engineers building Python services, SQL workflows, PostgreSQL data models, and more than 20 REST endpoints.</li>
+          <li>Built and maintained integrations supporting order, inventory, payment, vendor, and delivery workflows.</li>
+          <li>Supported systems processing more than 500 daily transactions and approximately 3,000 events.</li>
+          <li>Implemented authentication and input validation to ensure transaction requests were handled consistently.</li>
+          <li>Added retries and idempotency behavior to support recovery and reduce duplicate processing.</li>
+          <li>Implemented logging and reconciliation behaviors to help investigate transaction and integration issues.</li>
+          <li>Automated recurring operational tasks, reducing manual effort by approximately 30% (about eight hours per week).</li>
+          <li>Investigated failed, delayed, or mismatched processing across API requests, payloads, databases, webhooks, and external systems.</li>
+          <li>Worked with internal stakeholders to clarify technical requirements and address integration issues.</li>
+          <li>Documented API behavior, integration requirements, and operational procedures for engineering and support use.</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -1225,40 +1268,61 @@
 
   <div class="skills-grid">
     <div class="skill-group">
-      <h3>AI & LLM Systems</h3>
+      <h3>Solutions Engineering</h3>
       <ul>
-        <li>Generative AI & LLMs</li>
-        <li>Agentic AI & Multi-Agent Systems</li>
-        <li>LangGraph, LangChain & CrewAI</li>
-        <li>LlamaIndex</li>
-        <li>RAG & Corrective RAG</li>
-        <li>RAGAS & LangSmith</li>
-        <li>OpenAI & Gemini APIs</li>
+        <li>Technical Discovery</li>
+        <li>Solution Design</li>
+        <li>Customer Onboarding Support</li>
+        <li>Technical Demonstrations</li>
+        <li>PoC Support</li>
+        <li>Post-Launch Troubleshooting</li>
       </ul>
     </div>
-
     <div class="skill-group">
-      <h3>Machine Learning & Data</h3>
+      <h3>Payments and Transactions</h3>
       <ul>
-        <li>Deep Learning (PyTorch)</li>
-        <li>Forecasting (LSTM, Transformers)</li>
-        <li>Hugging Face</li>
-        <li>Python (pandas, NumPy)</li>
+        <li>Payment Workflows</li>
+        <li>Transaction Processing</li>
+        <li>Reconciliation</li>
+        <li>Exception Handling</li>
+        <li>Status Updates</li>
+        <li>Operational Reporting</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>APIs and Integration</h3>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3>Engineering</h3>
+      <ul>
+        <li>Technical Discovery</li>
+        <li>Solution Design</li>
+        <li>Customer Onboarding Support</li>
+        <li>Technical Demonstrations</li>
+        <li>PoC Support</li>
+        <li>Post-Launch Troubleshooting Payments and Transactions:Payment Workflows</li>
+        <li>Transaction Processing</li>
+        <li>Reconciliation</li>
+        <li>Exception Handling</li>
+        <li>Status Updates</li>
+        <li>Operational Reporting APIs and Integration:REST APIs</li>
+        <li>JSON</li>
+        <li>Webhooks</li>
+        <li>Authentication</li>
+        <li>Data Mapping</li>
+        <li>Request Validation</li>
+        <li>Retries</li>
+        <li>Idempotency Engineering:Python</li>
         <li>SQL</li>
-        <li>Statistical Analysis</li>
-      </ul>
-    </div>
-
-    <div class="skill-group">
-      <h3>Engineering & Deployment</h3>
-      <ul>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
         <li>FastAPI</li>
-        <li>REST & GraphQL APIs</li>
-        <li>ChromaDB, Pinecone & FAISS</li>
-        <li>Data Pipelines</li>
-        <li>AWS</li>
-        <li>Docker & Kubernetes</li>
-        <li>Git & Deployment</li>
+        <li>PostgreSQL</li>
+        <li>Redis</li>
+        <li>React</li>
       </ul>
     </div>
   </div>
